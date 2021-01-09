@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+  <title>ToDo-List</title>
+</head>
+<body>
+    <section class="new-task">
+      <form name="add-new-task">
+        <header class="header-add-task">
+          <h1>Тема</h1>
+          <select id = "theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select> 
+        </header>
+        <!--<input class="input" type="text" placeholder="Заголовок" required><br>
+        <textarea class="input" placeholder="Описание" required></textarea><br>
+        <input class="button" type="submit" value="Загрузить">
+        -->
+      </form>
+    </section>
+    <template id="task_temp" data-id="2">
+      <section class="task">
+        <header> 
+          <h2></h2>
+          <button class = "button"> X</button>
+        </header>
+          <p class="description"> </p>
+      </section>
+    </template>
+  <script src="app.js"></script>
+</body>
+</html>
